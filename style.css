@@ -1,0 +1,74 @@
+
+/* variable decleration */
+:root{
+    --primary-color : #0032e9;
+    --background-color : rgb(220, 226, 230);
+}
+
+body{
+    background-color: var(--background-color) ;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* card css */
+.card{
+height: 280px;
+width: 220px;
+background-color: white;
+border-radius: 35px;
+padding: 30px;
+text-align: center;
+/* 
+margin: 10px 15px; */
+}
+
+.card .img-box{
+    height: 60px;
+    width: 60px;
+    margin: auto;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.card .img-box img{
+    height: 30px;
+    width: 30px;
+    filter: brightness(100) invert(1);
+}
+.card .description-box{
+    height: auto;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+.card .description-box .title-tag{
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.card .description-box .description-tag{
+    font-size: 14px;
+    color: rgb(193, 195, 197);
+    margin: 0;
+
+}
+
+.card button{
+    height: 40px;
+    width: 80%;
+    border-radius: 40px;
+  border: 0;
+  background-color: var(--primary-color);
+  color: white;
+}
